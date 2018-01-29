@@ -21,10 +21,13 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-
     # render the web page with the data 
     return template.render()
 
+@app.route('/')
+def hello():
+    template = JINJA_ENVIRONMENT.get_template('templates/index2.html')
+    return template.render()
     
 @app.route('/about')
 def about():

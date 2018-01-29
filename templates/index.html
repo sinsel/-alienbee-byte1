@@ -5,56 +5,53 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Selin Insel">
     <link rel="icon" href="favicon.ico">
-    <title>Fusion Byte Tutorial</title>
+    <title>Fusion Byte Assignment</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body role="document">
+  
+    <div id= "contents" class="container theme-showcase" role="main">
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="about">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+      <div class="alert alert-info text-center" role="alert">
+        <h4>Hi! This is my First Byte of Interactive Data Science Project Assignment.</h4>
       </div>
-    </nav>
+      
+      <h2>
+      <span class="label label-default">Question</span>
+      <span id="question">Which US state has the most traffic related deaths per 100,000 people?</span>
+      </h2>
 
-    <div class="container theme-showcase" role="main">
+	<iframe width="900" height="600" scrolling="no" frameborder="no" 
+	src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col1+from+1Ao_jxDRyQirBRaCfgr7cxcbzk8L5I5fTPtk3-Odo+order+by+col1+desc+limit+51&amp;viz=GVIZ&amp;t=BAR&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_legacyScatterChartLabels=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Afalse%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%2C+%22formatOptions%22%3A%7B%22source%22%3A%22inline%22%7D%2C+%22format%22%3A%220.%23%23%22%2C+%22title%22%3A%22Number+of+Deaths%22%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%7D%5D&amp;gco_legend=none&amp;gco_title=Traffic+Deaths+By+State+(Per+100%2C000+Population)&amp;gco_fontName=sans-serif&amp;gco_domainAxis=%7B%22direction%22%3A1%7D&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23000%22%2C+%22fontSize%22%3A%2220%22%2C+%22bold%22%3Atrue%7D&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23cc0000%22%7D%7D&amp;width=900&amp;height=600">
+	</iframe>
+	
+	<h2>
+	<span class="label label-default">Answer</span>
+    <span>Wyoming!</span>
+    </h2>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-	<h1>Selin's Data Pipeline Project Fusion Byte Example</h1>
-        <p>This is the Fusion Byte of the Data Pipeline class. This
-        page should explain what question you want to answer and use
-        the visualization tools provided by Google Fusion Table to
-        answer it. </p>
+      <div id="explanation" class="well">
+        <p>This dataset was taken from vehicle-fatalities.findthebest.com. 
+        Accessed from <a href="https://fusiontables.google.com/DataSource?docid=1yAWERrHH32RCNh34n1yRqWsCU1QOt8K6Z4EpJfTL#card:id=2">this link </a>
+        on January 27, 2018. 
+        </p>
       </div>
 
-
-<iframe width="500" height="300" scrolling="no" frameborder="no"
-	src="https://www.google.com/fusiontables/embedviz?q=select+col16%3E%3E0+from+1ymz3EtGdi4qKGMl5AxEFXtTlgk3tKi8iCpjTzvM&amp;viz=MAP&amp;h=false&amp;lat=38.071424981566125&amp;lng=-85.15232666015623&amp;t=1&amp;z=9&amp;l=col16%3E%3E0&amp;y=3&amp;tmplt=3&amp;hml=TWO_COL_LAT_LNG"></iframe>
+	<div id="footer" class="container-fluid text-center">
+		Made by Selin Insel for Interaction Data Science Course at CMU in Spring 2018.
+    </div>
 
       </div> <!-- /page-header -->
     </div> <!-- /container -->
